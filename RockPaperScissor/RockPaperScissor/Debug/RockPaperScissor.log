@@ -1,0 +1,4 @@
+﻿  RockPaperScissor.cpp
+C:\Users\kbagoli\Desktop\RockPaperScissor\RockPaperScissor\RockPaperScissor\RockPaperScissor.cpp(76,9): warning C4809: switch statement has redundant 'default' label; all possible 'case' labels are given
+C:\Users\kbagoli\Desktop\RockPaperScissor\RockPaperScissor\RockPaperScissor\RockPaperScissor.cpp(96,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  RockPaperScissor.vcxproj -> C:\Users\kbagoli\Desktop\RockPaperScissor\RockPaperScissor\Debug\RockPaperScissor.exe
