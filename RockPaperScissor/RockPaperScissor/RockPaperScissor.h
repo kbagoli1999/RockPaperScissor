@@ -1,24 +1,4 @@
-/*************************************************************************
-*
-* ADOBE CONFIDENTIAL
-* ___________________
-*
-*  (c) Copyright 2014 Adobe Systems Incorporated
-*  All Rights Reserved.
-*
-* NOTICE:  All information contained herein is, and remains
-* the property of Adobe Systems Incorporated and its suppliers,
-* if any.  The intellectual and technical concepts contained
-* herein are proprietary to Adobe Systems Incorporated and its
-* suppliers and may be covered by U.S. and Foreign Patents,
-* patents in process, and are protected by trade secret or copyright law.
-* Dissemination of this information or reproduction of this material
-* is strictly forbidden unless prior written permission is obtained
-* from Adobe Systems Incorporated.
-**************************************************************************/
-
 #include <bits/stdc++.h>
-
 
 using namespace std;
 
@@ -45,17 +25,30 @@ public:
 	virtual int make_next_move();
 };
 
+/*
+*		---------------------------------------------------------
+*		|			      Player Class (Base class)				|
+*		|					/		\							|
+*		|				   /		 \							|
+*		|				  /	          \							|
+*		|		ComputerPlayer	   ActualPlayer					|
+*		|		(Computer Class)	 (Class for actual user)	|
+*		---------------------------------------------------------
+*/
+
 class RockPaperScissor
 {
 	public:
 		RockPaperScissor()
 		{
+			//Creating new instance of ComputerPlayer and ActualPlayer class
 			computer = new ComputerPlayer();
 			player = new ActualPlayer();
 		};
 
 		~RockPaperScissor()
 		{
+			//Freeing up allocated memory to computer and player object
 			delete computer;
 			delete player;
 		}
