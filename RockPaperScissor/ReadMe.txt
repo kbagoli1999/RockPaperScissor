@@ -1,5 +1,7 @@
 Hi, Welcome to Rock-Paper-Scissors Game!
 
+In order to play Rock Paper Scissor game, go to Debug folder, and run RockPaperScissor.exe
+
 In this game, I have used 4 classes.
 
 1. Player
